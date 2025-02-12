@@ -28,7 +28,7 @@ function ContactForm() {
     setIsLoading(true);
     if (formFeedback) resetFeedback();
     try {
-      const response = await fetch('/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         body: JSON.stringify(form),
         headers: {

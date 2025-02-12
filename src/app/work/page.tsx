@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
+import { getAbsoluteUrl } from '../../api-utils/helpers';
 import BreadCrumbs from '../../components/BreadCrumbs';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Projects from '../../components/Projects';
 import { HEADER_HEIGHT, PROJECTS } from '../../utils/constants';
-import { getAbsoluteUrl } from '../api-utils/helpers';
 
 export const metadata: Metadata = {
   title: 'Work - Rohail Taha',

@@ -15,7 +15,7 @@ import {
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getAbsoluteUrl } from './api-utils/helpers';
+import { getAbsoluteUrl } from '../api-utils/helpers';
 
 const EXPERIENCES = [
   {
