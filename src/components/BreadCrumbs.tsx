@@ -1,6 +1,11 @@
+import Link from 'next/link';
 import { Fragment } from 'react';
 
-function BreadCrumbs({ links }: any) {
+type BreakCrumbsProps = {
+  links: Array<{ href: string; name: string }>;
+};
+
+function BreadCrumbs({ links }: BreakCrumbsProps) {
   return (
     <ul className="flex-c gap-x-3">
       {links.map((link, index) => {
@@ -8,7 +13,7 @@ function BreadCrumbs({ links }: any) {
         return (
           <Fragment key={link.href}>
             <li className={isLastLink ? 'font-bold underline' : ''}>
-              <a href={link.href}>{link.name}</a>
+              <Link href={link.href}>{link.name}</Link>
             </li>
             {!isLastLink && (
               <li>

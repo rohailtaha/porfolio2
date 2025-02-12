@@ -10,6 +10,7 @@ import {
 } from '@/utils/constants';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type SingleWorkProps = {
   params: Promise<{ projectName: string }>;
@@ -90,24 +91,24 @@ async function SingleWork({ params }: SingleWorkProps) {
               </div>
               <div className="font-medium flex-c gap-x-3">
                 {project.codeLink && (
-                  <a
+                  <Link
                     target="_blank"
                     rel="noreferrer"
                     href={project.codeLink}
                     aria-label="View project on GitHub"
                   >
                     <GithubIcon />
-                  </a>
+                  </Link>
                 )}
                 {project.viewLink && (
-                  <a
+                  <Link
                     target="_blank"
                     rel="noreferrer"
                     href={project.viewLink}
                     aria-label="View project"
                   >
                     <ViewProjectIcon />
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>

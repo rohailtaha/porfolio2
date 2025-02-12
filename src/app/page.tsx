@@ -14,6 +14,7 @@ import {
 } from '@/utils/constants';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { getAbsoluteUrl } from './api-utils/helpers';
 
 const EXPERIENCES = [
@@ -99,28 +100,28 @@ export default function Home() {
             </div>
             <ul className="flex flex-row gap-4 mt-8 lg:flex-col lg:justify-self-end">
               <li>
-                <a
+                <Link
                   href={GITHUB_PROFILE_LINK}
                   aria-label="View my GitHub profile"
                 >
                   <GithubIcon width="1.75rem" height="1.75rem" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href={LINKEDIN_PROFILE_LINK}
                   aria-label="View my LinkedIn profile"
                 >
                   <LinkedInIcon width="1.75rem" height="1.75rem" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href={CODESANDBOX_PROFILE_LINK}
                   aria-label="View my CodeSandbox profile"
                 >
                   <CodeSandboxIcon width="1.75rem" height="1.75rem" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -129,13 +130,13 @@ export default function Home() {
           <div className="flex-cb">
             <SectionHeading>Selected Work</SectionHeading>
             <div>
-              <a
+              <Link
                 href="/work"
                 className="px-4 py-2 font-medium border-2 rounded-full flex-c gap-x-2 border-text-primary text-text-primary"
               >
                 <span className="text-sm"> Show all projects</span>
                 <ArrowRightIcon />
-              </a>
+              </Link>
             </div>
           </div>
           <Projects projects={Object.keys(PROJECTS).slice(0, 4)} />
@@ -164,7 +165,7 @@ export default function Home() {
                   skills.
                 </p>
               </div>
-              <a
+              <Link
                 href="/assets/resume.pdf"
                 download="rohail-resume.pdf"
                 className="inline-flex items-center px-5 py-3 font-semibold text-white rounded-full gap-x-2 mt-7 bg-primary"
@@ -173,7 +174,7 @@ export default function Home() {
                 <span className="block w-[24px] h-[24px] bg-white rounded-full flex-cc text-primary">
                   <ArrowDownIcon />
                 </span>{' '}
-              </a>
+              </Link>
             </div>
             <div>
               <div className="px-2 pt-2 hidden md:inline-block text-center -rotate-[6deg] -translate-y-10 bg-white border shadow-lg w-fit">

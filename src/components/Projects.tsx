@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { PROJECTS } from '../utils/constants';
 import { GithubIcon, ViewProjectIcon } from './icons';
 
@@ -13,37 +14,37 @@ function Projects({ projects }: ProjectsProps) {
         const project = PROJECTS[projectSlug];
         return (
           <div className="space-y-4" key={projectSlug}>
-            <a href={`/work/${projectSlug}`} className="block border">
+            <Link href={`/work/${projectSlug}`} className="block border">
               <Image
                 src={`/assets/${project.image.small}`}
                 alt={`image for project ${project.name}`}
                 width={1830}
                 height={910}
               />
-            </a>
+            </Link>
             <div className="space-y-2">
               <div className="flex-cb">
                 <h3 className="text-lg font-semibold">{project.name}</h3>
                 <div className="font-medium flex-c gap-x-2">
                   {project.codeLink && (
-                    <a
+                    <Link
                       target="_blank"
                       rel="noreferrer"
                       href={project.codeLink}
                       aria-label="View project on GitHub"
                     >
                       <GithubIcon />
-                    </a>
+                    </Link>
                   )}
                   {project.viewLink && (
-                    <a
+                    <Link
                       target="_blank"
                       rel="noreferrer"
                       href={project.viewLink}
                       aria-label="View project"
                     >
                       <ViewProjectIcon />
-                    </a>
+                    </Link>
                   )}
                 </div>
               </div>
