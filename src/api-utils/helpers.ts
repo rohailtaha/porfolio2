@@ -20,6 +20,7 @@ export function getAbsoluteUrl(path: string = ''): string {
 }
 
 export function getMailTransport() {
+  console.log(EMAIL_SERVICE, EMAIL_SERVER_PASSWORD);
   return nodemailer.createTransport({
     service: EMAIL_SERVICE,
     auth: {
