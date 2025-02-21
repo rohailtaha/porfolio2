@@ -11,7 +11,7 @@ export const FRONTEND_MENTOR_PROFILE_LINK =
 
 export const MY_EMAIL = 'taharohail77@gmail.com';
 
-export const YEARS_OF_EXPERIENCE = 2.5;
+export const YEARS_OF_EXPERIENCE = 3;
 
 export const PROJECTS: Projects = {
   'api-freaks': {
@@ -27,12 +27,10 @@ export const PROJECTS: Projects = {
     viewLink: 'https://apifreaks.com',
     year: 2024,
     highlights: [
-      'Built the frontend and api integration for the product.',
-      'Lead the frontend team and distributed tasks to different team members.',
-      'Continously communicated with the backend team for api requirements.',
-      'Wrote website content for improved SEO.',
-      'Enhanced core web vitals by improving website performance.',
-      'Performed code reviews and ensured coding standards and clean code practices are met.',
+      'Developed a responsive, user-friendly frontend and seamlessly integrated it with multiple APIs, working closely with backend developers.',
+      'Led the frontend team by delegating tasks, establishing coding standards, and conducting code reviews to ensure code quality and maintainability.',
+      'Enhanced core web vitals of multiple pages, improving load times and overall user experience.',
+      'Researched and wrote SEO optimized content to improve search visibility and engagement.',
       'Researched and installed the Ghost platform on server for hassle free blog management.',
     ],
   },
@@ -40,7 +38,7 @@ export const PROJECTS: Projects = {
     slug: 'tweetstorm',
     name: 'TweetStorm',
     description:
-      'An AI-powered Tweet Generator featuring hashtag generation, bio generation, username suggestions, advanced tweet search and a browser extension.',
+      'An AI-powered Tweet Generator featuring hashtag generation, bio generation, username suggestions, advanced tweet search. The product also includes browser extensions for generating tweets and replies and for performing bulk twitter actions like bulk tweet deletions, unlikes etc.',
     image: {
       large: 'tweetstorm-large.png',
       small: 'tweetstorm-small.png',
@@ -49,13 +47,14 @@ export const PROJECTS: Projects = {
     year: 2024,
     skills: ['Next.js', 'TailwindCSS', 'Stripe', 'MySQL'],
     highlights: [
-      'Migrated the application from Laravel to Next.js.',
-      'Collaborated with team members on the implementation and enhancement of various application features.',
+      'Spearheaded development as both Product Manager and Team Lead.',
+      'Developed the frontend and APIs and implemented various application features.',
+      'Made changes to database schema and optimized queries to enhance performance and reduce latency.',
+      'Migrated the application from PHP/Laravel to Next.js and ensured safe migration of application to the new server.',
       'Performed safe database migrations in production.',
-      'Wrote website content and improved SEO.',
       'Developed the CD pipeline for streamlining the development workflow.',
-      'Lead the development team and assigned tasks to team members.',
-      'Brainstormed about the features and issues in browser extensions and made improvements to it.',
+      'Bug fixes and UI improvements in the browser extensions.',
+      'Conducted research and wrote SEO-optimized content to boost search visibility and user engagement.',
       'Performed code reviews and ensured coding standards and clean code practices are met.',
     ],
   },
@@ -79,12 +78,30 @@ export const PROJECTS: Projects = {
       'Firebase',
     ],
     highlights: [
-      'Collaborated with team members on the implementation and enhancement of various application features.',
+      'Developed the frontend, drag and drop builder and APIs and implemented various application features.',
       'Updating the @craftjs/layers open source package for our custom use.',
+      'Reduced database reads and writes to improve efficiency and scalability.',
       'Writing database migration scripts.',
-      "Optimizing the performance of firebase's firestore read and write queries.",
-      'Performed code reviews and ensured coding standards and clean code practices are met.',
       'Writing documentation for various architectural designs used in the application.',
+      'Performed code reviews and ensured coding standards and clean code practices are met.',
+    ],
+  },
+  pulsechat: {
+    slug: 'pulsechat',
+    name: 'PulseChat',
+    description:
+      'AI chatbot for Shopify stores. Boost sales and customer satisfaction with instant product discovery and order tracking.',
+    image: {
+      large: 'pulsechat-large.png',
+      small: 'pulsechat-small.png',
+    },
+    viewLink: 'https://apps.shopify.com/pulsechat',
+    year: 2023,
+    skills: ['Next.js', 'Shopify', 'MySQL'],
+    highlights: [
+      'Migrated the codebase from PHP/Laravel to Node/Express.',
+      'Removed the usage of deprecated Shopify REST API and replaced it with the new GraphQL API.',
+      'Successfully moved the application to a new server, ensuring database and other data is safely migrated with minimum downtime.',
     ],
   },
   'softwares-rating-app': {
@@ -145,6 +162,12 @@ export const PROJECT_PAGES_SEO_DATA: ProjectPagesSEOData = {
     description:
       'An AI-powered low-code website builder, that allows users to create websites with drag-and-drop functionality, customizable templates and AI enabled chat.',
     ogImage: 'webbsai-large.png',
+  },
+  pulsechat: {
+    title: 'Work - PulseChat',
+    description:
+      'AI chatbot for Shopify stores. Boost sales and customer satisfaction with instant product discovery and order tracking.',
+    ogImage: 'pulsechat-large.png',
   },
   'softwares-rating-app': {
     title: 'Work - Softwares Rating App',

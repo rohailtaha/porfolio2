@@ -145,24 +145,25 @@ export default function Home() {
           <SectionHeading>Bio</SectionHeading>
           <div className="grid justify-between md:grid-cols-[1.4fr_1fr] mt-7 gap-x-8 lg:gap-x-24">
             <div>
-              <div className="space-y-3 text-text-primary">
+              <div className="space-y-3">
                 <p>
-                  I am a Full Stack Developer with over 2.5 years of experience
-                  creating user-friendly applications. I have a strong
-                  understanding of software development best practices. I love
-                  collaborating with individuals to create fantastic digital
-                  products.
+                  Hey there, I&apos;m Rohail! A Full Stack Developer who loves
+                  turning ideas into real, user-friendly web experiences. Over
+                  the past 3 years, I&apos;ve been lucky enough to work on a
+                  bunch of exciting projects—whether it&apos;s revamping tech
+                  stacks, crafting robust APIs, or fine-tuning database
+                  performance. I&apos;ve also had the chance to lead teams and
+                  mentor junior developers along the way.
+                </p>
+                <p></p>
+                <p>
+                  In my free time, you&apos;ll usually find me experimenting
+                  with side projects and learning new topics to enhance my
+                  engineering skills.
                 </p>
                 <p>
-                  My background in Computer Science, helps me understand and
-                  solve complex problems. In addition to my development
-                  expertise, I have hands-on team management experience, having
-                  led multiple projects and mentored junior developers.
-                </p>
-                <p>
-                  In my free time, you&apos;ll usually find me building side
-                  projects and learning new topics to enhance my engineering
-                  skills.
+                  Thanks for stopping by—if you want to talk about anything,
+                  just say hi, I&apos;m always around!
                 </p>
               </div>
               <Link
@@ -231,7 +232,7 @@ export default function Home() {
           </div>
         </section>
         <section className="pt-16 pb-32 mx-auto max-content-w">
-          <SectionHeading>Tech Stack</SectionHeading>
+          <SectionHeading>Skills</SectionHeading>
           <div className="grid font-medium gap-x-16 gap-y-8 sm:grid-cols-3 mt-7 text-text-primary">
             <div>
               <h3 className="text-text-secondary">Frontend</h3>
