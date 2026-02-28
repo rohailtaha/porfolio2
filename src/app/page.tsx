@@ -65,6 +65,7 @@ const SKILLS = {
   backend: [
     'Node.js',
     'Express.js',
+    'Go',
     'PostgreSQL',
     'MongoDB',
     'MySQL',
@@ -149,7 +150,7 @@ export default function Home() {
                 <p>
                   Hey there, I&apos;m Rohail! A Full Stack Developer who loves
                   turning ideas into real, user-friendly web experiences. Over
-                  the past 3 years, I&apos;ve been lucky enough to work on a
+                  the past 4 years, I&apos;ve been lucky enough to work on a
                   bunch of exciting projects—whether it&apos;s revamping tech
                   stacks, crafting robust APIs, or fine-tuning database
                   performance. I&apos;ve also had the chance to lead teams and
@@ -162,7 +163,7 @@ export default function Home() {
                   engineering skills.
                 </p>
                 <p>
-                  Thanks for stopping by—if you want to talk about anything,
+                  Thanks for stopping by. If you want to talk about anything,
                   just say hi, I&apos;m always around!
                 </p>
               </div>

@@ -19,7 +19,7 @@ function Footer() {
     <footer className="pb-8 text-sm responsive-pad text-text-muted">
       <div className="mx-auto space-y-4 text-center xs:space-y-0 xs:text-left max-content-w xs:flex-cb">
         <ul>
-          <li>© 2024 Rohail Taha</li>
+          <li>© {new Date().getFullYear()} Rohail Taha</li>
         </ul>
         <ul className="flex-cc gap-x-4">
           <li>

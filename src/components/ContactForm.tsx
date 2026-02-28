@@ -18,7 +18,7 @@ function ContactForm() {
     useFormFeedback();
 
   function handleChange(
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   }
@@ -38,7 +38,7 @@ function ContactForm() {
       if (response.ok) {
         setSuccess(
           "Your message is received. I'll get back to you soon.",
-          3000
+          3000,
         );
       } else {
         const data = await response.json();
@@ -46,7 +46,7 @@ function ContactForm() {
       }
     } catch {
       setError(
-        `Something went wrong. We're very sorry. You can try sending email directly to ${MY_EMAIL}`
+        `Something went wrong. We're very sorry. You can try sending email directly to ${MY_EMAIL}`,
       );
     } finally {
       setIsLoading(false);
@@ -116,7 +116,7 @@ function ContactForm() {
           </li>
           <li>
             <div> Call me </div>
-            <div className="text-lg text-text-primary">+92 309010461</div>
+            <div className="text-lg text-text-primary">+92 3090100461</div>
           </li>
           <li>
             <div> Address </div>

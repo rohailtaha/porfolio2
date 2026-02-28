@@ -45,7 +45,7 @@ export const PROJECTS: Projects = {
     },
     viewLink: 'https://tweetstorm.ai',
     year: 2024,
-    skills: ['Next.js', 'TailwindCSS', 'Stripe', 'MySQL'],
+    skills: ['Next.js', 'TailwindCSS', 'MySQL', 'Stripe'],
     highlights: [
       'Spearheaded development as both Product Manager and Team Lead.',
       'Developed the frontend and APIs and implemented various application features.',
@@ -71,11 +71,11 @@ export const PROJECTS: Projects = {
     year: 2023,
     skills: [
       'Next.js',
+      'MongoDB',
+      'Firebase',
       'TailwindCSS',
       'AWS S3',
       'Stripe',
-      'MongoDB',
-      'Firebase',
     ],
     highlights: [
       'Developed the frontend, drag and drop builder and APIs and implemented various application features.',
@@ -97,7 +97,7 @@ export const PROJECTS: Projects = {
     },
     viewLink: 'https://apps.shopify.com/pulsechat',
     year: 2023,
-    skills: ['Next.js', 'Shopify', 'MySQL'],
+    skills: ['Next.js', 'Shopify', 'Express.js', 'MySQL'],
     highlights: [
       'Migrated the codebase from PHP/Laravel to Node/Express.',
       'Removed the usage of deprecated Shopify REST API and replaced it with the new GraphQL API.',
